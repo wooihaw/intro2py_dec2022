@@ -130,6 +130,9 @@ for i in range(1, 11):
     
 for i in range(1, 11):
     print(f"ID{i:03}")
+    
+print("Python is a \N{snake}")
+print("I am \N{grinning face}")
 
 
 
