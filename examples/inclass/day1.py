@@ -164,6 +164,26 @@ print(f'{blist=}, {clist=}')
 dlist = blist.sort()  # inplace sorting (blist is sorted)
 print(f'{blist=}, {dlist=}')
 
+#%% String to list and vice-versa
+astring = 'Testing 123!'
+alist = list(astring)  # convert string to list
+print(f'{astring=}')
+print(f'{alist=}')
+
+bstring = ''.join(alist)
+cstring = '-'.join(alist)
+print(f'{bstring=}')
+print(f'{cstring=}')
+
+# Removing non-alphabet from astring
+blist = []
+for c in astring:
+    if c.isalpha():
+        blist.append(c)
+dstring = ''.join(blist)
+print(f'{dstring=}')
+
+
 
 
 
