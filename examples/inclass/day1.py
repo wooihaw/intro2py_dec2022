@@ -158,6 +158,12 @@ print(f'{alist[-1][0]=}')  # select the last item and its first element
 
 #%% Sorting a list
 blist = [3, 1, 4, 2, 6, 5, 0]
+clist = sorted(blist, reverse=True)  # return a sorted list, descending order
+print(f'{blist=}, {clist=}')
+
+dlist = blist.sort()  # inplace sorting (blist is sorted)
+print(f'{blist=}, {dlist=}')
+
 
 
 
