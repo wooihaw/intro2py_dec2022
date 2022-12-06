@@ -125,7 +125,11 @@ a = 123
 b = 45.678
 print(f'{a=}, {a=:04x}, {a=:016b}, {b=:.2f}, {b=:.4f}')
 
-
+for i in range(1, 11):
+    print(f"Value: {i*i:>3}")
+    
+for i in range(1, 11):
+    print(f"ID{i:03}")
 
 
 
