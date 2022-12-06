@@ -175,7 +175,7 @@ cstring = '-'.join(alist)
 print(f'{bstring=}')
 print(f'{cstring=}')
 
-# Removing non-alphabet from astring
+# Removing non-alphabet characters from astring
 blist = []
 for c in astring:
     if c.isalpha():
@@ -183,8 +183,26 @@ for c in astring:
 dstring = ''.join(blist)
 print(f'{dstring=}')
 
+#%% List methods
+alist = [1, 2.5, 'abc', [3, 7.2], 'xyz', 101, 1]
 
+print(f'{alist.count(1)=}')
 
+print(f'{alist.index("xyz")=}')
+print(f'{alist.index(1)=}')  # only return the index of the first match
+
+alist.remove(1)  # only remove the first match
+print(f'{alist=}')  
+
+alist.insert(2, 'Hello')  # Insert at index 2
+print(f'{alist=}')
+
+a = alist.pop(4)  # remove and return the item at index 4
+print(f'{a=}')
+print(f'{alist=}')
+
+alist.clear()  # clear the list to become empty list
+print(f'{alist=}')
 
 
 
