@@ -120,7 +120,10 @@ print(s)
 print('The character "l" appears ' + str(m.count('l')) + ' times')
 print(f'The character "l" appears {m.count("l")} times')
 
-
+#%% f-string formating
+a = 123
+b = 45.678
+print(f'{a=}, {a=:04x}, {a=:016b}, {b=:.2f}, {b=:.4f}')
 
 
 
