@@ -134,6 +134,32 @@ for i in range(1, 11):
 print("Python is a \N{snake}")
 print("I am \N{grinning face}")
 
+#%% List join, append and extend
+alist = [1, 2, 3]
+print(f'{alist=}')
+
+alist = alist + [4]  # can only join with another list
+alist += [5]  # same as above (alist = alist + [5])
+print(f'{alist=}')
+
+alist.append(6)  # Only can append one item
+print(f'{alist=}')
+
+alist.extend([7, 8])  # Similar to join
+print(f'{alist=}')
+
+alist.append([9, 0])
+print(f'{alist=}')
+
+# Use len() function to check the number of items in a list
+print(f'Number of items in alist: {len(alist)}')
+
+print(f'{alist[-1][0]=}')  # select the last item and its first element
+
+#%% Sorting a list
+blist = [3, 1, 4, 2, 6, 5, 0]
+
+
 
 
 
