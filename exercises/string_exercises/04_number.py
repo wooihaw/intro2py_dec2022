@@ -8,3 +8,11 @@
 # Enter a number: 1
 # Enter a thing name: apple
 # There is 1 apple.
+
+num = input('Enter a number: ')
+thing = input('Enter a thing name: ')
+
+if num == '1':
+    ...
+else:
+    ...
