@@ -132,9 +132,17 @@ fruits = ['apples', 'orange', 'pear']
 prices = [1.5, 2.5, 4]
 
 inventory = {k: v for k, v in zip(fruits, prices)}
+print(f'{inventory=}')
 
+# Using for loop
+discount_inventory1 = {}
+for k in inventory:
+    discount_inventory1[k] = 0.9*inventory[k]
+print(f'{discount_inventory1=}')
 
-
+# Using dictionary comprehension to generate a dictionry for 10% discount
+discount_inventory2 = {k: 0.9*inventory[k] for k in inventory}
+print(f'{discount_inventory2=}')
 
 
 
