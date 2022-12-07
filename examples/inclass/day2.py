@@ -71,8 +71,67 @@ print('Not empty' if adict else 'Empty')
 adict['a'] = 123
 print('Not empty' if adict else 'Empty')
 
+#%% Iterate through more than one lists in a for loop
+fruits = ['apples', 'orange', 'pear']
+prices = [1.5, 2.5, 4]
 
+# Using range() to generate a sequence of numbers to be used as index
+for i in range(len(fruits)):
+    print(f'{fruits[i]}: {prices[i]}')
+    
+# Alternatively, zip() can be used to combined the lists
+for i, j in zip(fruits, prices):
+    print(f'{i}: {j}')
 
+#%% List comprehension example 1
+names = ['ali', 'bala', 'chen', 'david']
+
+# Using for loop
+cap_names1 = []
+for n in names:
+    cap_names1.append(n.capitalize())
+print(f'{cap_names1=}')
+
+# Using list comprehension
+cap_names2 = [n.capitalize() for n in names]
+print(f'{cap_names2=}')
+
+#%% List comprehension example 2
+alist = ['Java', 'Rust', 'Python', 'Swift', 'Go']
+
+# Using for loop
+filtered_list1 = []
+for i in alist:
+    if 'o' in i:
+        filtered_list1.append(i)
+print(f'{filtered_list1=}')
+
+# Using list comprehension
+filtered_list2 = [i for i in alist if 'o' in i]
+print(f'{filtered_list2=}')
+
+#%% List comprehension example 3
+s = 'Testing 123! Are you there?'
+
+# Using for loop
+t1 = []
+for c in s:
+    t1.append(c if c.isalpha() else ' ')
+u1 = ''.join(t1)
+w1 = u1.split()
+print(f'{w1=}')
+
+# Using list comprehension
+t2 = [c if c.isalpha() else ' ' for c in s]
+u2 = ''.join(t2)
+w2 = u2.split()
+print(f'{w2=}')
+
+#%% Dictionary comprehension
+fruits = ['apples', 'orange', 'pear']
+prices = [1.5, 2.5, 4]
+
+inventory = {k: v for k, v in zip(fruits, prices)}
 
 
 
