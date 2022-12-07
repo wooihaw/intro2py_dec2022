@@ -6,4 +6,4 @@ print(f'Second largest value: {sorted(alist)[-2]}')
 
 # Alternative solution
 alist.sort()
-print(f'Second largest value: {alist.sort()[-2]}')
+print(f'Second largest value: {alist[-2]}')
