@@ -18,3 +18,7 @@ d4_2 = {}
 for d in (d1, d2, d3):
     d4_2.update(d)
 print(f'{d4_2=}')
+
+# Solution 3
+d4_3 = {k: d[k] for d in (d1, d2, d3) for k in d}
+print(f'{d4_3=}')
