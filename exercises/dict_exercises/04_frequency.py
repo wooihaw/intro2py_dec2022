@@ -5,4 +5,9 @@ astring = 'The quick brown fox jumps over the lazy dog.'
 alist = [c.lower() for c in astring if c.isalpha()]
 print(f'{alist=}')
 
-print(sorted(set(alist)))
+uniq_alphabets = sorted(set(alist))
+
+freq = {}
+for a in uniq_alphabets:
+    freq[a] = alist.count(a)
+print(f'{freq=}')
