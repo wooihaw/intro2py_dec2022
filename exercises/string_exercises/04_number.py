@@ -13,6 +13,6 @@ num = input('Enter a number: ')
 thing = input('Enter a thing name: ')
 
 if num == '1':
-    ...
+    print(f'There is {num} {thing}.')
 else:
-    ...
+    print(f'There are {num} {thing}s.')
