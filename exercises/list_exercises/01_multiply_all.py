@@ -7,3 +7,8 @@ for i in alist:
     a = a + i
 print(f'{a=}')
 print(f'{sum(alist)=}')
+
+b = alist.pop(0)  # remove item at index 0 and assignment to variable b
+for i in alist:
+    b = b * i
+print(f'The product of all items in alist is {b=}')
