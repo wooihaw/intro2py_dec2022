@@ -1,4 +1,8 @@
 # Write a Python script to find the frequency of occurance for each alphabet in a string.
 astring = 'The quick brown fox jumps over the lazy dog.'
 
-print(sorted(set(astring)))
+# Clean and normalize the text
+alist = [c.lower() for c in astring if c.isalpha()]
+print(f'{alist=}')
+
+
