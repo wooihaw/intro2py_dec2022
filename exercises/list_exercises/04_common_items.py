@@ -8,7 +8,7 @@ print(f'List of common items: {clist1}')
 
 # Solution 2
 clist2 = []
-for i in blist:
-    if i in alist:
+for i in alist:
+    if i in blist:
         clist2.append(i)
 print(f'List of common items: {clist2}')
