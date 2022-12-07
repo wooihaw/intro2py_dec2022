@@ -44,6 +44,19 @@ d3 = dict(b=0)
 d1.update(d3)
 print(f'{d1=}')  # on;y update the value for 'b'
 
+#%% Set examples
+s1 = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+s2 = {1, 3, 5, 7, 9}
+s3 = {2, 4, 6, 8, 10}
+
+print(f'{s1-s3=}')  # return the items in s1 that are not in s3
+print(f'{s3-s1=}')  # return the items in s3 that are not in s1
+print(f'{s1.symmetric_difference(s3)=}')  # return items not in both s1 and s3
+print(f'{s3.symmetric_difference(s1)=}')  # return items not in both s1 and s3
+
+#%% Set will remove duplicated items
+alist = [1, 3, 2, 1, 1, 3, 4, 'abc', 5, 'abc']
+print(f'{set(alist)=}')
 
 
 
