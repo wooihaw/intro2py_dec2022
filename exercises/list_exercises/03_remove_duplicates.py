@@ -5,7 +5,7 @@ print(f'{alist=}')
 # Solution 1
 print(f'{list(set(alist))}')
 
-# Alternative solution
+# Solution 2
 uniq_list = []
 for i in alist:
     if i not in uniq_list:
