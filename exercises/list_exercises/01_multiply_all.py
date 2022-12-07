@@ -5,4 +5,5 @@ print(f'{alist=}')
 a = 0
 for i in alist:
     a = a + i
-print(a)
+print(f'{a=}')
+print(f'{sum(alist)=}')
