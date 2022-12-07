@@ -3,3 +3,7 @@ alist = [12, 43, 57, 98, 83, -103, 256, -55, 185]
 print(f'{alist=}')
 
 print(f'Second largest value: {sorted(alist)[-2]}')
+
+# Alternative solution
+alist.sort()
+print(f'Second largest value: {alist[-2]}')
