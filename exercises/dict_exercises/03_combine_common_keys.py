@@ -15,3 +15,12 @@ for d in (d1, d2):
         elif k in d2:
             d3_1[k] = d2[k]
 print(f'{d3_1=}')
+
+# Solution 2
+d3_2 = d1.copy()
+for k in d2:
+    if k in d3_2:
+        d3_2[k] = d2[k] + d3_2[k]
+    else:
+        d3_2[k] = d2[k]
+print(f'{d3_2=}')
