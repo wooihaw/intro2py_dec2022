@@ -5,7 +5,7 @@ astring = 'The quick brown fox jumps over the lazy dog.'
 alist = [c.lower() for c in astring if c.isalpha()]
 print(f'{alist=}')
 
-uniq_alphabets = sorted(set(alist))
+uniq_alphabets = sorted(set(alist))  # get a list of sorted unique alphabets
 
 freq = {}
 for a in uniq_alphabets:
