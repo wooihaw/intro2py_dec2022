@@ -5,4 +5,4 @@ astring = 'The quick brown fox jumps over the lazy dog.'
 alist = [c.lower() for c in astring if c.isalpha()]
 print(f'{alist=}')
 
-
+print(sorted(set(alist)))
