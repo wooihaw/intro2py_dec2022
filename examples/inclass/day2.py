@@ -58,6 +58,21 @@ print(f'{s3.symmetric_difference(s1)=}')  # return items not in both s1 and s3
 alist = [1, 3, 2, 1, 1, 3, 4, 'abc', 5, 'abc']
 print(f'{set(alist)=}')
 
+#%% Empty sequences are treated as Falase, otherwise they are treated as True
+alist = []
+print('Not empty' if alist else 'Empty')
+
+alist.append(0)
+print('Not empty' if alist else 'Empty')
+
+adict = {}
+print('Not empty' if adict else 'Empty')
+
+adict['a'] = 123
+print('Not empty' if adict else 'Empty')
+
+
+
 
 
 
