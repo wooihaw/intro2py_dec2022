@@ -16,3 +16,6 @@ if num == '1':
     print(f'There is {num} {thing}.')
 else:
     print(f'There are {num} {thing}s.')
+    
+output = f'There {"is" if num=="1" else "are"} {num} {thing}{"" if num=="1" else "s"}.'
+print(output)
