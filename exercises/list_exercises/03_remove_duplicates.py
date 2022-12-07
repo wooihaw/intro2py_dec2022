@@ -3,7 +3,7 @@ alist = [99, 3, -1.2, 2.5, -1.2, -1.2, 5.75, 'xyz', 'a', 99, 'P', 'a', 2.5, 'xyz
 print(f'{alist=}')
 
 # Solution 1
-print(f'{list(set(alist))}')
+print(f'{list(set(alist))=}')
 
 # Solution 2
 uniq_list = []
