@@ -22,4 +22,3 @@ d4_3 = {}
 for d in (d1, d2, d3):
     d4_3.update(d)
 print(f'{d4_3=}')
-
