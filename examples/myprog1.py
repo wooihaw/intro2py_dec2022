@@ -7,3 +7,4 @@ Created on Thu Dec  8 14:31:06 2022
 import adder
 ans = adder.add(2, 3)
 print(ans)
+print(adder.abc)
