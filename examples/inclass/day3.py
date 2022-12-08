@@ -36,10 +36,15 @@ print(f'{blist=}')
 clist = sorted(alist, key=lambda x:int(x[2:]))
 print(f'{clist=}')
 
+#%% Using lambda function with max()
 
+paper_size = ('A1', 'A4', 'A3', 'A5', 'A2')
 
+print(f'{max(paper_size)=}')
 
+print(f'{max(paper_size, key=lambda x:-int(x[1:]))=}')
 
+print(f'{min(paper_size, key=lambda x:-int(x[1:]))=}')
 
 
 
