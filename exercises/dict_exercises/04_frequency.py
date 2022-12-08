@@ -11,3 +11,9 @@ freq = {}
 for a in uniq_alphabets:
     freq[a] = alist.count(a)
 print(f'{freq=}')
+
+# Alternative solution
+from collections import Counter
+
+c = Counter(alist)
+print(c)
