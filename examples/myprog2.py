@@ -5,8 +5,8 @@ Created on Thu Dec  8 14:45:12 2022
 @author: wooihaw
 """
 
-import mypackage.module1
-import mypackage.module2
+import mypackage.module1 as m1
+import mypackage.module2 as m2
 
-mypackage.module1.greet("Dave")
-mypackage.module2.depart("Alex")
+m1.greet("Dave")
+m2.depart("Alex")
