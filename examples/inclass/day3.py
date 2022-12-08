@@ -18,3 +18,12 @@ clist = sorted(alist)
 print(f'{alist=}')
 print(f'{blist=}')
 print(f'{clist=}')
+
+#%% Function Example 2
+def myfunc(a, b, c=3):
+    print(f'{a=}, {b=}, {c=}')
+
+myfunc(2, 1, 5)
+myfunc(3, b=6)
+#myfunc(a=1, 4, 7)  # Not allowed
+
