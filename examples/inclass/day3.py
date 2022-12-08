@@ -46,6 +46,17 @@ print(f'{max(paper_size, key=lambda x:-int(x[1:]))=}')
 
 print(f'{min(paper_size, key=lambda x:-int(x[1:]))=}')
 
+#%% Using map() with lambda function
+
+# Using list comprehension
+sqr1 = [x*x for x in range(1, 11)]
+
+# Using map() with lambda function
+sqr2 = list(map(lambda x: x*x, range(1, 11)))
+
+print(f'{sqr1=}')
+print(f'{sqr2=}')
+
 
 
 
