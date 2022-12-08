@@ -57,6 +57,34 @@ sqr2 = list(map(lambda x: x*x, range(1, 11)))
 print(f'{sqr1=}')
 print(f'{sqr2=}')
 
+#%% Using filter() with lambda function
+
+# Using list comprehension
+odd1 = [x for x in range(10) if x%2]
+
+# Using filter() with lambda function
+odd2 = list(filter(lambda y: y%2, range(10)))
+
+print(f'{odd1=}', f'{odd2=}', sep='\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
